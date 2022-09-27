@@ -8,3 +8,5 @@
 .terraform.lock.hcl
 # var file with my ip address as to not open my instance to 0.0.0.0/0
 myip.tf
+# Keypair used to ssh into an instance
+*.pem
