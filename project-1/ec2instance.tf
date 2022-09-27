@@ -4,6 +4,7 @@ resource "aws_instance" "web" {
   instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.sg-ssh.id, aws_security_group.sg-web.id]
   user_data              = file("app1-install.sh")
+  key_name = var.instance_keypair
 
 
   tags = {
