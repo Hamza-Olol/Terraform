@@ -1,0 +1,13 @@
+# Details on what a gitignore file is and how to use it can be found at https://git-scm.com/docs/gitignore
+
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform
+# *.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+# var file with my ip address as to not open my instance to 0.0.0.0/0
+myip.tf
+# Keypair used to ssh into an instance
+*.pem
