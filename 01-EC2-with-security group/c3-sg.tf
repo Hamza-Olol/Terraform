@@ -9,7 +9,7 @@ resource "aws_security_group" "sg-ssh" {
     to_port     = 22
     protocol    = "tcp"
     # Fill in below with your own ip to be more secure and not allow access to everyone
-    cidr_blocks = [var.sg_ingress_ip]
+    cidr_blocks = [var.sg_ingress_ip] # Personal IP in hidden variable file.
   }
 
   egress {
